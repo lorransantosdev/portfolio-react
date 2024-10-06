@@ -1,8 +1,9 @@
-export default function TitlePages({ styleTitle, titlePage }) {
-
-    return(
+export default function TitlePages({ style, text, highlightText }) {
+    return (
         <>
-        <h1 className={styleTitle}>{titlePage}</h1>
+            <h1 className={style}>
+                {text} <span className="text-purpleCostum">{highlightText}</span>
+            </h1>
         </>
-    )
+    );
 }
