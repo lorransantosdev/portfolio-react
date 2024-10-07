@@ -20,7 +20,7 @@ export default function MainContent() {
         <>
             <Banner>
                 <TitlePages style={titleBanner.style} text={titleBanner.text} highlightText={titleBanner.highlightText} />
-                <p className="text-[#da1854] sm:w-4/5 w-fulll sm:text-2xl text-sm font-inconsolata text-center">software engineering student</p>
+                <p className="text-[#da1854] sm:text-3xl text-lg font-inconsolata text-center">software engineering student</p>
                 <div className="text-white mt-10">
                     <SocialLinks/>
                 </div>

@@ -5,9 +5,9 @@ import Sections from '../Components/Sections';
 import SkillCategory from '../Components/SkillCategory';
 
 export default function SkillsPage() {
-  const sectionAbout = {
+  const sectionSkills = {
     background: "bg-black",
-    positions: "flex flex-col items-center justify-center text-white h-screen",
+    positions: "flex flex-col items-center text-white",
   };
 
   const purpleCustom = "text-[#6A00FF]";
@@ -43,12 +43,12 @@ export default function SkillsPage() {
   ];
 
   return (
-    <Sections background={sectionAbout.background} positions={sectionAbout.positions}>
-      <h1 className="text-4xl font-inconsolata text-center mb-8">My Skills</h1>
+    <Sections background={sectionSkills.background} positions={sectionSkills.positions}>
+      <h1 className="sm:text-5xl text-3xl mb-4 font-inconsolata text-center text-[#da1854]">My Skills</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        {skillsData.map((category, index) => (
-          <SkillCategory key={index} title={category.title} skills={category.skills} />
+      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-10">
+        {skillsData.map((category) => (
+          <SkillCategory title={category.title} skills={category.skills} />
         ))}
       </div>
     </Sections>

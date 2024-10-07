@@ -9,15 +9,19 @@ import PageNotFound from './pages/PageNotFound.jsx';
 import MainContent from './Components/MainContent.jsx';
 import Contact from './Pages/Contact.jsx';
 import MySkills from './Pages/MySkills.jsx';
+import Projects from './Pages/Projects.jsx';
+import ProjectsDetails from './Components/projectsDetails.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
     children: [
-      { index: true, element: <MainContent/> },
-      { path: '/contact', element: <Contact />},
-      { path: '/mySkills', element: <MySkills />},
+      { index: true, element: <MainContent /> },
+      { path: 'contact', element: <Contact /> },
+      { path: 'mySkills', element: <MySkills /> },
+      { path: 'projects', element: <Projects /> },
+      { path: 'projects/:id', element: <ProjectsDetails/> },
       { path: '*', element: <PageNotFound /> }
     ]
   }
