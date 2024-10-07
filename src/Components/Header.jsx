@@ -11,7 +11,8 @@ export default function Header() {
       className="bg-black text-white flex justify-between items-center 
       w-full min-w-80 px-4 sm:px-20 py-3 fixed z-10"
     >
-        <Link to="/">
+ 
+      <Link to="/" className="flex items-center">
         <img src={logoPersonal} alt="Lorran logo" className="w-20 sm:w-32" />
       </Link>
 
@@ -58,27 +59,26 @@ export default function Header() {
               Projects
             </NavLink>
           </li>
+
+          <li className="mt-4 lg:hidden">
+            <button
+              onClick={() => {
+                navigate('/contact');
+                setIsMobileMenuOpen(false);
+              }}
+              className="bg-purpleCostum hover:bg-[#da1854] text-white text-lg font-semibold py-2 px-8 rounded-3xl transition duration-300 ease-in-out w-full"
+            >
+              Contact
+            </button>
+          </li>
         </ul>
       </nav>
+
 
       <div className="hidden lg:flex">
         <button
           onClick={() => navigate('/contact')}
           className="bg-purpleCostum hover:bg-[#da1854] text-white lg:text-2xl md:text-xl sm:text-lg text-sm font-semibold py-2 px-8 rounded-3xl transition duration-300 ease-in-out"
-        >
-          Contact
-        </button>
-      </div>
-
-      <div className={`${
-          isMobileMenuOpen ? 'block' : 'hidden'
-        } lg:hidden mt-4 w-full flex justify-center`}>
-        <button
-          onClick={() => {
-            navigate('/contact');
-            setIsMobileMenuOpen(false);
-          }}
-          className="bg-purpleCostum hover:bg-[#da1854] text-white lg:text-2xl md:text-xl sm:text-lg text-sm font-semibold py-2 px-8 rounded-3xl transition duration-300 ease-in-out w-3/4"
         >
           Contact
         </button>
