@@ -1,4 +1,4 @@
-import ProjectsList from "../Components/projectsList";
+import ProjectsList from "../Components/ProjectsList";
 import Sections from "../Components/Sections";
 
 export default function Projects(){
@@ -15,7 +15,7 @@ export default function Projects(){
             </div>
 
             <div>
-                <ProjectsList/> 
+                <ProjectsList />
             </div>
         </Sections>
     );

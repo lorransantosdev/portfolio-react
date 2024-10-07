@@ -9,8 +9,8 @@ import MainContent from './Components/MainContent.jsx';
 import Contact from './Pages/Contact.jsx';
 import MySkills from './Pages/MySkills.jsx';
 import Projects from './Pages/Projects.jsx';
-import ProjectsDetails from './Components/projectsDetails.jsx';
 import PageNotFound from './Pages/PageNotFound.jsx';
+import ProjectsDetails from './Components/ProjectsDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       { path: 'contact', element: <Contact /> },
       { path: 'mySkills', element: <MySkills /> },
       { path: 'projects', element: <Projects /> },
-      { path: 'projects/:id', element: <ProjectsDetails/> },
+      { path: 'projects/:id', element: <ProjectsDetails /> },
       { path: '*', element: <PageNotFound/>
        }
     ]
