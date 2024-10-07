@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import InputContact from '../Components/InputContact';
 import Sections from '../Components/Sections';
 
 export default function Contact() {
+
+  const formRef = useRef();
 
   const [formValues, setFormValues] = useState({
     name: '',
@@ -19,9 +21,12 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
     console.log('Form Submitted:', formValues);
 
+    formRef.current.reset();
     setFormValues({
       name: '',
       email: '',
@@ -46,9 +51,9 @@ export default function Contact() {
     <Sections background={sectionAbout.background} positions={sectionAbout.positions}>
       <h1 className="sm:text-5xl text-3xl mb-4 font-inconsolata text-center text-[#da1854]">Contact Us</h1>
 
-      <form onSubmit={handleSubmit} className="flex flex-col gap-3 w-full max-w-xs sm:max-w-md md:max-w-lg">
+      <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-3 w-full max-w-xs sm:max-w-md md:max-w-lg">
         <InputContact forInputs={contactInputs} handleChange={handleInputChange} formValues={formValues} />
-        
+
         <button type="submit" className="bg-purpleCostum hover:bg-[#da1854] text-white py-2 px-4 rounded-3xl">
           Send Message
         </button>

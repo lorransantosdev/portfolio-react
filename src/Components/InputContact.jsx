@@ -8,7 +8,7 @@ export default function InputContact({ forInputs, handleChange }) {
           <label htmlFor={forInput.id} className="text-[#6A00FF] sm:w-4/5 w-full sm:text-xl text-sm font-roboto mb-2">
             {forInput.label}
           </label>
-          
+
           {forInput.type === 'textarea' ? (
             <textarea
               id={forInput.id}
