@@ -1,6 +1,13 @@
-export default function Contact(){
+import Sections from "../Components/Sections";
 
+export default function Contact(){
+    const sectionAbout = {
+        background: "bg-black",
+        positions: "flex flex-col items-center justify-center text-white h-screen" 
+    };
     return(
-        <h1 className="text-black">Contact</h1>
+        <Sections background={sectionAbout.background} positions={sectionAbout.positions}>
+
+        </Sections>
     )
 }
