@@ -26,7 +26,7 @@ As seguintes cores foram utilizadas para estilização do projeto:
 | Gray-900          | `#1A1A1A`          | Background das seções e cards          |
 | Slate-800         | `#2D3748`          | Background de imagens nos cards        |
 
-##✒️ Tipografia
+## ✒️ Tipografia
 O projeto utiliza as seguintes fontes:
 
 - **Roboto**: Utilizada para a maioria dos textos e parágrafos, por ser uma fonte sans-serif com boa legibilidade.
