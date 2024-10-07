@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header
       className="bg-black text-white flex justify-between items-center 
-      w-full min-w-80 px-4 sm:px-40 py-3 fixed z-10"
+      w-full min-w-80 px-4 sm:px-20 py-3 fixed z-10"
     >
         <Link to="/">
         <img src={logoPersonal} alt="Lorran logo" className="w-20 sm:w-32" />
@@ -54,8 +54,8 @@ export default function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/services" className="hover:text-primary-color" onClick={() => setIsMobileMenuOpen(false)}>
-              Services
+            <NavLink to="/projects" className="hover:text-primary-color" onClick={() => setIsMobileMenuOpen(false)}>
+              Projects
             </NavLink>
           </li>
         </ul>

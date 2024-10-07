@@ -1,8 +1,8 @@
 import React from 'react';
-import SocialLinks from './SocialLinks'; // Importando o componente de redes sociais
+import SocialLinks from './SocialLinks';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const nowYear = new Date().getFullYear();
 
   return (
     <footer className="bg-black text-white py-6 flex flex-col items-center justify-center min-w-80">
@@ -14,7 +14,7 @@ export default function Footer() {
       </p>
 
       <div className="text-center text-sm font-roboto">
-        &copy; {currentYear} Lorran's Portfolio. All Rights Reserved.
+        &copy; {nowYear} Lorran's Portfolio. All Rights Reserved.
       </div>
     </footer>
   );
