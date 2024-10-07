@@ -5,12 +5,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import './index.css';
 
-import PageNotFound from './pages/PageNotFound.jsx';
 import MainContent from './Components/MainContent.jsx';
 import Contact from './Pages/Contact.jsx';
 import MySkills from './Pages/MySkills.jsx';
 import Projects from './Pages/Projects.jsx';
 import ProjectsDetails from './Components/projectsDetails.jsx';
+import PageNotFound from './Pages/PageNotFound.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +22,8 @@ const router = createBrowserRouter([
       { path: 'mySkills', element: <MySkills /> },
       { path: 'projects', element: <Projects /> },
       { path: 'projects/:id', element: <ProjectsDetails/> },
-      { path: '*', element: <PageNotFound /> }
+      { path: '*', element: <PageNotFound/>
+       }
     ]
   }
 ]);
