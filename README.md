@@ -40,7 +40,7 @@ O projeto utiliza as seguintes fontes:
 - **Links para Redes Sociais**: Ícones para navegação nas redes sociais com `React Icons`.
 
 
-##💡 Autor
+## 💡 Autor
 Desenvolvido e mantido por Lorran Dos Santos. Para saber mais sobre mim, visite minhas redes sociais que estão no portfólio.
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
