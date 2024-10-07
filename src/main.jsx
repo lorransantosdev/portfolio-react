@@ -10,7 +10,7 @@ import Contact from './Pages/Contact.jsx';
 import MySkills from './Pages/MySkills.jsx';
 import Projects from './Pages/Projects.jsx';
 import PageNotFound from './Pages/PageNotFound.jsx';
-import ProjectsDetails from './Components/projectsDetails.jsx';
+import ProjectsDetails from './Components/ProjectsDetails.jsx';
 
 const router = createBrowserRouter([
   {
