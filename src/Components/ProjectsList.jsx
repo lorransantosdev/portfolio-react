@@ -11,7 +11,7 @@ export default function ProjectsList() {
             key={project.id} 
             className="bg-gray-700 hover:bg-gray-800 transition ease-in-out duration-300 p-5 rounded-3xl shadow-lg">
 
-            <Link to={`/projects/${project.id}`} target="_blank">
+            <Link to={`/projects/${project.id}`}>
               <img src={project.img} alt={project.alt} className="w-full h-auto object-cover rounded-3xl mb-4 cursor-pointer" />
             </Link>
 
