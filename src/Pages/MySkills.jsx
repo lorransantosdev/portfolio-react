@@ -7,7 +7,7 @@ import SkillCategory from '../Components/SkillCategory';
 export default function SkillsPage() {
   const sectionSkills = {
     background: "bg-black",
-    positions: "flex flex-col items-center text-white h-screen",
+    positions: "flex flex-col items-center text-white",
   };
 
   const purpleCustom = "text-[#6A00FF]";

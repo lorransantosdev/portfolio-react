@@ -59,6 +59,11 @@ export default function Header() {
               Projects
             </NavLink>
           </li>
+          <li>
+            <NavLink to="*" className="hover:text-primary-color" onClick={() => setIsMobileMenuOpen(false)}>
+              not
+            </NavLink>
+          </li>
 
           <li className="mt-4 lg:hidden">
             <button

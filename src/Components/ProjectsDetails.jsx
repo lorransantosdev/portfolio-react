@@ -25,7 +25,7 @@ export default function ProjectsDetails() {
             <p className="sm:w-4/5 w-full sm:text-xl text-sm mb-4 font-roboto text-start">{project.description}</p>
             
 
-            <img src={project.img} alt={project.alt} className="sm:w-4/5 w-full h-auto object-cover bg-slate-800 p-10 rounded-3xl mb-4" />
+            <img src={project.img} alt={project.alt} className="sm:w-4/5 w-full h-auto object-cover bg-slate-800 md:p-10 p-5 rounded-3xl mb-4" />
             <div className='sm:w-4/5 w-full'>
                 <p className="w-full sm:text-xl text-sm font-roboto text-start"><strong>Status:</strong> {project.status}</p>
                 <p className="w-fulll sm:text-xl text-sm font-roboto text-start"><strong>Category:</strong> {project.category}</p>

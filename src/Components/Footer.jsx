@@ -5,7 +5,7 @@ export default function Footer() {
   const nowYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black text-white py-6 flex flex-col items-center justify-center min-w-80">
+    <footer className="bg-black text-white sm:px-20 px-5 py-6 flex flex-col items-center justify-center min-w-80">
       
       <SocialLinks />
 
