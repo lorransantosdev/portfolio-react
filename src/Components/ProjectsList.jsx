@@ -16,7 +16,7 @@ export default function ProjectsList() {
             </Link>
 
             <h2 className="text-2xl font-roboto mb-2">{project.title}</h2>
-            <p className="text-sm text-gray-400 mb-2"><strong>Status:</strong>{project.status}</p>
+            <p className="text-sm text-gray-400 mb-2"><strong>Status:</strong> {project.status}</p>
             <p className="text-sm text-gray-400 mb-4"><strong>Category:</strong> {project.category}</p>
 
             <a href={project.code.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 bg-[#6A00FF] text-white py-2 px-4 rounded-3xl hover:bg-[#da1854] transition duration-300">
