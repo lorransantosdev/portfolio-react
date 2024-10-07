@@ -23,7 +23,7 @@ export default function ProjectsDetails() {
             <div className="flex items-center gap-4">
 
               <button onClick={() => navigate("/projects")} className="text-xl hover:text-[#6A00FF] transition duration-300">
-                <FaArrowLeft className="text-3xl" />
+                <FaArrowLeft className="text-xl sm:text-3xl" />
               </button>
               
               <h1 className="sm:text-5xl text-3xl font-inconsolata text-center text-[#da1854]">

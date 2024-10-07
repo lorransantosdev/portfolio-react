@@ -19,9 +19,15 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     console.log('Form Submitted:', formValues);
+
+    setFormValues({
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    });
   };
 
   const sectionAbout = {
@@ -41,9 +47,9 @@ export default function Contact() {
       <h1 className="sm:text-5xl text-3xl mb-4 font-inconsolata text-center text-[#da1854]">Contact Us</h1>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-3 w-full max-w-xs sm:max-w-md md:max-w-lg">
-        <InputContact forInputs={contactInputs} handleChange={handleInputChange} />
+        <InputContact forInputs={contactInputs} handleChange={handleInputChange} formValues={formValues} />
         
-        <button type="submit" className="bg-purpleCostum hover:bg-[#da1854] text-white py-2 px-4 rounded-lg">
+        <button type="submit" className="bg-purpleCostum hover:bg-[#da1854] text-white py-2 px-4 rounded-3xl">
           Send Message
         </button>
       </form>
