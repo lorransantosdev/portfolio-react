@@ -1,9 +1,12 @@
 import React from 'react';
-import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 
 export default function SocialLinks() {
   return (
     <div className="flex space-x-4 text-xl mb-4">
+      <a href="https://wa.me/5511987885083" className="hover:text-[#da1854]" target="_blank" rel="noopener noreferrer">
+        <FaWhatsapp />
+      </a>
       <a href="https://www.instagram.com/losantos_/profilecard/?igsh=OXlma3Bvc3hwbzky" className="hover:text-[#6A00FF]" target="_blank" rel="noopener noreferrer">
         <FaInstagram />
       </a>

@@ -4,7 +4,7 @@ import { projects } from '../data/projectsData';
 
 export default function ProjectsList() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-10 p-10 text-white">
+    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-10 text-white">
       {projects.length > 0 ? (
         projects.map((project) => (
           <div 

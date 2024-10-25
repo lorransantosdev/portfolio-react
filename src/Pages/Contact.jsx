@@ -37,7 +37,7 @@ export default function Contact() {
 
   const sectionAbout = {
     background: 'bg-black',
-    positions: 'flex flex-col items-center text-white h-screen',
+    positions: 'flex flex-col items-center text-white',
   };
 
   const contactInputs = [

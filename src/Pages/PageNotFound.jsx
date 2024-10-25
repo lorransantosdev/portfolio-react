@@ -1,6 +1,7 @@
 import Sections from "../Components/Sections";
 import { useNavigate } from "react-router-dom";
 import TitlePages from "../Components/TitlePages";
+import notFound from "../../public/error-404.svg"
 
 export default function PageNotFound() {
     const navigate = useNavigate();
@@ -18,6 +19,7 @@ export default function PageNotFound() {
 
     return(
         <Sections background={sectionError.background} positions={sectionError.positions}>
+            <img src={notFound} alt="" />
             <p className="text-[#da1854] sm:text-3xl text-lg font-inconsolata text-center">Page Not Found</p>
             <TitlePages style={titleNotFound.style} text={titleNotFound.text} highlightText={titleNotFound.highlightText} />
 

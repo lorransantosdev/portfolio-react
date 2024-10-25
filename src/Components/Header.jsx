@@ -66,9 +66,9 @@ export default function Header() {
                 navigate('/contact');
                 setIsMobileMenuOpen(false);
               }}
-              className="bg-purpleCostum hover:bg-[#da1854] text-white text-lg font-semibold py-2 px-8 rounded-3xl transition duration-300 ease-in-out w-full"
+              className="bg-purpleCostum hover:bg-[#da1854] text-white text-lg font-semibold py-2 px-8 rounded-3xl transition duration-200 ease-in-out w-full"
             >
-              Contact
+              Let's Connect
             </button>
           </li>
         </ul>
@@ -78,9 +78,9 @@ export default function Header() {
       <div className="hidden lg:flex">
         <button
           onClick={() => navigate('/contact')}
-          className="bg-purpleCostum hover:bg-[#da1854] text-white lg:text-2xl md:text-xl sm:text-lg text-sm font-semibold py-2 px-8 rounded-3xl transition duration-300 ease-in-out"
+          className="bg-purpleCostum hover:bg-[#da1854] text-white text-center lg:text-2xl md:text-xl sm:text-lg text-sm font-semibold py-2 px-8 rounded-3xl transition duration-300 ease-in-out"
         >
-          Contact
+          Let's Connect
         </button>
       </div>
     </header>
